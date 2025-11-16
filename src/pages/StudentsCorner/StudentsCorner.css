@@ -1,0 +1,426 @@
+/* Students Corner Page */
+.students-corner {
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+/* Hero Section */
+.students-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #0A3A8A 100%);
+  color: var(--white);
+  padding: calc(80px + var(--space-8)) 0 var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.students-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="30" cy="30" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="20" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.students-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.students-hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--white);
+}
+
+.students-hero-content p {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* Main Content Section */
+.students-content {
+  padding: var(--space-8) 0;
+  background-color: var(--light-gray);
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-light);
+  background-color: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: 140px;
+}
+
+.tab-button:hover {
+  background-color: var(--light-gray);
+  color: var(--primary-blue);
+}
+
+.tab-button.active {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+}
+
+/* Tab Content */
+.tab-content {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  min-height: 400px;
+}
+
+/* Notices Section */
+.notices-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.notice-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  transition: var(--transition);
+}
+
+.notice-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.notice-date {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.notice-type {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.notice-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.notice-description {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: var(--space-3);
+}
+
+.notice-link {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--primary-blue);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  transition: var(--transition);
+}
+
+.notice-link:hover {
+  color: var(--saffron);
+}
+
+/* Links Section */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.link-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-decoration: none;
+  transition: var(--transition);
+  display: block;
+}
+
+.link-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.link-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--light-gray);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-3);
+}
+
+.link-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-blue);
+}
+
+.link-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--space-2);
+}
+
+.link-description {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-light);
+  margin-bottom: var(--space-2);
+}
+
+.link-url {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--primary-blue);
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* Downloads Section */
+.downloads-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.download-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.download-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--light-gray);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.download-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-blue);
+}
+
+.download-content {
+  flex: 1;
+}
+
+.download-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--space-1);
+}
+
+.download-meta {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.download-type,
+.download-size {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.download-type {
+  background-color: var(--light-gray);
+  padding: 2px var(--space-1);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.download-button {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.download-button:hover {
+  background-color: #082358;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .students-hero {
+    padding: calc(70px + var(--space-6)) 0 var(--space-6);
+  }
+  
+  .students-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .students-hero-content p {
+    font-size: 1.125rem;
+  }
+  
+  .students-content {
+    padding: var(--space-6) 0;
+  }
+  
+  .tab-navigation {
+    gap: var(--space-1);
+    margin-bottom: var(--space-6);
+  }
+  
+  .tab-button {
+    min-width: 120px;
+    font-size: 0.9375rem;
+    padding: var(--space-1) var(--space-3);
+  }
+  
+  .tab-content {
+    padding: var(--space-4);
+  }
+  
+  .links-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .download-card {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+  
+  .download-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .students-hero {
+    padding: calc(70px + var(--space-4)) 0 var(--space-4);
+  }
+  
+  .students-hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .students-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .students-content {
+    padding: var(--space-4) 0;
+  }
+  
+  .tab-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .tab-content {
+    padding: var(--space-3);
+  }
+  
+  .notice-card {
+    padding: var(--space-3);
+  }
+  
+  .notice-title {
+    font-size: 1.125rem;
+  }
+  
+  .link-card {
+    padding: var(--space-3);
+  }
+  
+  .download-card {
+    padding: var(--space-3);
+  }
+}

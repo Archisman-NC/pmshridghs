@@ -1,0 +1,140 @@
+/* Highlight Card Component */
+.highlight-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  transition: var(--transition);
+  border: 1px solid var(--border-light);
+  min-height: 100px;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* REMOVE all variant color overrides */
+.highlight-card--default,
+.highlight-card--primary,
+.highlight-card--saffron,
+.highlight-card--green,
+.highlight-card--secondary,
+.highlight-card--accent,
+.highlight-card--success {
+  background-color: var(--white) !important;
+  border-color: var(--border-light) !important;
+}
+
+/* FORCE ALL TEXT TO BLUE */
+.highlight-card__title,
+.highlight-card__value {
+  color: var(--primary-blue) !important;
+}
+
+/* ICON BOX */
+.highlight-card__icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--light-gray);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ICON COLOR = BLUE */
+.highlight-card__icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-blue) !important;
+}
+
+/* Content */
+.highlight-card__content {
+  flex: 1;
+}
+
+.highlight-card__title {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.highlight-card__value {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .highlight-card {
+    padding: var(--space-3);
+    gap: var(--space-2);
+  }
+
+  .highlight-card__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .highlight-card__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .highlight-card__title {
+    font-size: 0.75rem;
+  }
+
+  .highlight-card__value {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlight-card {
+    padding: var(--space-2);
+    gap: var(--space-2);
+  }
+
+  .highlight-card__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .highlight-card__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .highlight-card__title {
+    font-size: 0.6875rem;
+  }
+
+  .highlight-card__value {
+    font-size: 0.9375rem;
+  }
+}
+
+/* FORCE everything inside highlight card to be blue */
+.highlight-card,
+.highlight-card * {
+  color: var(--primary-blue) !important;
+  fill: var(--primary-blue) !important;
+  stroke: var(--primary-blue) !important;
+}
+
+/* Icon wrapper (keep light background if needed) */
+.highlight-card__icon {
+  background-color: var(--light-gray) !important;
+}
