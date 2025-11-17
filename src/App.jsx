@@ -8,6 +8,9 @@ import Staff from './pages/Staff/Staff';
 import StudentsCorner from './pages/StudentsCorner/StudentsCorner';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
+import Academic from './pages/Academic/Academic';
+import CoCurricular from './pages/CoCurricular/CoCurricular';
+import CampusSupport from './pages/CampusSupport/CampusSupport';
 import './styles/global.css';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
             <Route path="/students-corner" element={<StudentsCorner />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/academic" element={<Academic />} />
+            <Route path="/co-curricular" element={<CoCurricular />} />
+            <Route path="/campus-support" element={<CampusSupport />} />
           </Routes>
         </main>
         <Footer />

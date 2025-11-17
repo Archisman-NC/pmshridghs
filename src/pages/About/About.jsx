@@ -21,83 +21,17 @@ const About = () => {
           <div className="about-wrapper">
             {/* School Description */}
             <div className="about-description">
-                <h2>Our Legacy of Excellence</h2>
+                <h2>A. Vision Statement of PM SHRI Schools:</h2>
                 <p>
-                  Established in 1938, PM Shri Dharmanagar Govt. Girls' H.S. School stands as one 
-                  of the oldest and most prestigious educational institutions in Tripura. For over 
-                  eight decades, we have been dedicated to providing quality education and holistic 
-                  development to generations of young women.
-                </p>
-                <p>
-                  Our school is committed to creating an environment where every student can 
-                  thrive academically, socially, and personally. We believe in nurturing not just 
-                  intellectual growth but also character development, leadership skills, and 
-                  civic responsibility.
+                  PM SHRI schools shall set examples for the best in class in the country. The education in these schools will be such that it will nurture lifelong learners who carry the acumen and desire to learn, unlearn and relearn at all spectrums of life to become engaged, productive, and contributing citizens for building an equitable, inclusive, and plural society as envisaged by the National Education Policy 2020.
                 </p>
                 
-                <h3>Our Mission</h3>
+                <h2>B. Mission Statement of PM SHRI Schools:</h2>
                 <p>
-                  To empower young women through quality education, fostering academic excellence, 
-                  character development, and social responsibility, preparing them to become 
-                  confident, compassionate, and capable leaders of tomorrow.
+                  PM SHRI schools aim to prepare more than 14,500 exemplar schools in which every student feels welcomed and cared for, where a safe and stimulating learning environment exists, where a wide range of learning experiences are offered, and where good physical infrastructure and appropriate resources conducive to learning are available to all students.
                 </p>
-                
-                <h3>Our Vision</h3>
-                <p>
-                  To be a center of educational excellence that nurtures and empowers girls to 
-                  become independent, confident, and socially responsible citizens who can contribute 
-                  meaningfully to society and nation-building.
-                </p>
-                
-                <h3>Core Values</h3>
-                <ul className="values-list">
-                  <li><strong>Excellence:</strong> Striving for the highest standards in education and character</li>
-                  <li><strong>Integrity:</strong> Building honesty, ethics, and moral values</li>
-                  <li><strong>Empowerment:</strong> Enabling girls to achieve their full potential</li>
-                  <li><strong>Innovation:</strong> Embracing modern teaching methods and technologies</li>
-                  <li><strong>Inclusivity:</strong> Creating an environment of respect and equality</li>
-                </ul>
               </div>
             </div>
-        </section>
-
-        {/* Achievements Section */}
-        <section className="achievements-section">
-          <div className="about-wrapper">
-            <h2 className="section-title">Our Achievements</h2>
-            <div className="achievements-grid">
-              <div className="achievement-card">
-                <div className="achievement-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                  </svg>
-                </div>
-                <h3>PM Shri School</h3>
-                <p>Recognized as a PM Shri School for excellence in education</p>
-              </div>
-              
-              <div className="achievement-card">
-                <div className="achievement-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M9 11H3v2h6v-2zm0-4H3v2h6V7zm0 8H3v2h6v-2zm12-8h-6v2h6V7zm0 4h-6v2h6v-2zm0 4h-6v2h6v-2z"/>
-                  </svg>
-                </div>
-                <h3>Academic Excellence</h3>
-                <p>Consistent outstanding performance in board examinations</p>
-              </div>
-              
-              <div className="achievement-card">
-                <div className="achievement-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M12 6v6l4 2"/>
-                  </svg>
-                </div>
-                <h3>85+ Years of Service</h3>
-                <p>Serving the community with dedication and excellence</p>
-              </div>
-            </div>
-          </div>
         </section>
       </main>
     </>

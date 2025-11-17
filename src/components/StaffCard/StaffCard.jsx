@@ -1,37 +1,13 @@
 import React from 'react';
 import './StaffCard.css';
 
-const StaffCard = ({ name, designation, qualification, image, email, phone }) => {
+const StaffCard = ({ name, phone }) => {
   return (
     <div className="staff-card">
-      <div className="staff-card__image">
-        <img 
-          src={image || '/assets/images/staff-placeholder.jpg'} 
-          alt={name}
-          onError={(e) => {
-            e.target.src = '/assets/images/staff-placeholder.jpg';
-          }}
-        />
-      </div>
-      
       <div className="staff-card__content">
         <h3 className="staff-card__name">{name}</h3>
-        <p className="staff-card__designation">{designation}</p>
-        {qualification && (
-          <p className="staff-card__qualification">{qualification}</p>
-        )}
         
         <div className="staff-card__contact">
-          {email && (
-            <a href={`mailto:${email}`} className="staff-card__email">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              {email}
-            </a>
-          )}
-          
           {phone && (
             <a href={`tel:${phone}`} className="staff-card__phone">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

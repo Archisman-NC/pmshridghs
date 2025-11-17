@@ -8,19 +8,19 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              PM Shri Dharmanagar Govt. Girls' H.S. School
+              PM SHRI DHARMANAGAR GOVT. GIRLS' H.S. SCHOOL
             </h1>
-            <p className="hero-subtitle">
-              Empowering Young Minds Since 1938
-            </p>
+            <h2 className="hero-subtitle">
+              (Estd: 1938)
+            </h2>
             <p className="hero-description">
               One of the premier educational institutions in Tripura, dedicated to providing quality education and holistic development for girls in Dharmanagar, North Tripura District.
             </p>
             <div className="hero-actions">
-              <a href="#about" className="btn btn-primary">
+              <a href="#about" style={{ backgroundColor: '#D0D0D0', color: '#1E1E1E', border: 'none', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontSize: '16px', fontWeight: '500' }}>
                 Learn More
               </a>
-              <a href="#contact" className="btn btn-outline" style={{ color: 'white' }}>
+              <a href="#contact" style={{ backgroundColor: '#D0D0D0', color: '#1E1E1E', border: 'none', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none', display: 'inline-block', fontSize: '16px', fontWeight: '500' }}>
                 Contact Us
               </a>
             </div>
@@ -28,18 +28,6 @@ const Hero = () => {
           
           <div className="hero-highlights">
             <div className="highlight-cards">
-              <div className="highlight-card">
-                <div className="highlight-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                  </svg>
-                </div>
-                <div className="highlight-content">
-                  <h3>Established</h3>
-                  <p>1938</p>
-                </div>
-              </div>
-              
               <div className="highlight-card">
                 <div className="highlight-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

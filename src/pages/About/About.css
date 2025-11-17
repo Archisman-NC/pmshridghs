@@ -66,6 +66,7 @@
   max-width: 100%;
   margin: 0;
   text-align: center;
+  padding: var(--space-8);
 }
 
 .about-description h2,

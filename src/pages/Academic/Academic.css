@@ -1,0 +1,102 @@
+.academic-page {
+  min-height: 100vh;
+  background-color: var(--light-gray);
+}
+
+.academic-hero {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: var(--space-12) 0;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--space-3);
+  padding: var(--space-4) 0;
+}
+
+.page-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-4) 0;
+}
+
+.academic-content {
+  padding: var(--space-12) 0 var(--space-8) 0;
+}
+
+.facilities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-3);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8);
+}
+
+.facility-item {
+  background-color: var(--white);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.facility-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.facility-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .academic-hero {
+    padding: var(--space-8) 0;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+  }
+  
+  .academic-content {
+    padding: var(--space-8) 0;
+  }
+  
+  .facilities-list {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .facility-item {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .facility-name {
+    font-size: 0.875rem;
+  }
+}

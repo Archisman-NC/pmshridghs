@@ -17,18 +17,8 @@ const Home = () => {
         </svg>
       ),
       title: 'Total Students',
-      value: '1,200+',
+      value: '1284',
       variant: 'primary'
-    },
-    {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-        </svg>
-      ),
-      title: 'Established',
-      value: '1965',
-      variant: 'secondary'
     },
     {
       icon: (
@@ -40,7 +30,7 @@ const Home = () => {
         </svg>
       ),
       title: 'Teachers',
-      value: '45+',
+      value: '35',
       variant: 'accent'
     },
     {
@@ -50,8 +40,8 @@ const Home = () => {
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
         </svg>
       ),
-      title: 'Classrooms',
-      value: '30+',
+      title: 'Classrooms and Labs',
+      value: '21',
       variant: 'success'
     }
   ];
@@ -82,43 +72,6 @@ const Home = () => {
       <section className="about-section">
         <div className="container">
           <div className="about-content">
-            <div className="about-text">
-              <h2>Welcome to PM Shri Dharmanagar Govt. Girls' H.S. School</h2>
-              <p>
-                Established in 1965, our school has been a beacon of quality education 
-                in the North Tripura district for over five decades. As a PM Shri School, 
-                we are committed to providing holistic education that empowers young women 
-                to become confident, responsible, and compassionate citizens.
-              </p>
-              <p>
-                Our mission is to create a nurturing environment where every student can 
-                discover her potential, develop critical thinking skills, and embrace the 
-                values of discipline, integrity, and service to society.
-              </p>
-              <div className="about-features">
-                <div className="feature">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22,4 12,14.01 9,11.01"/>
-                  </svg>
-                  <span>Quality Education</span>
-                </div>
-                <div className="feature">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22,4 12,14.01 9,11.01"/>
-                  </svg>
-                  <span>Safe Environment</span>
-                </div>
-                <div className="feature">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22,4 12,14.01 9,11.01"/>
-                  </svg>
-                  <span>Modern Infrastructure</span>
-                </div>
-              </div>
-            </div>
             <div className="about-image">
               <img 
                 src="/assets/images/pmshri.jpeg" 

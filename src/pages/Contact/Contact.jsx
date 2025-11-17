@@ -130,7 +130,7 @@ const Contact = () => {
                       <p>
                         PM Shri Dharmanagar Govt. Girls' H.S. School<br />
                         Dharmanagar, North Tripura District<br />
-                        Tripura - 799221
+                        Tripura - 799250
                       </p>
                     </div>
                   </div>
@@ -143,8 +143,10 @@ const Contact = () => {
                     </div>
                     <div className="contact-item-content">
                       <h3>Phone</h3>
-                      <p>+91-3822-234567</p>
-                      <p>+91-3822-234568</p>
+                      <div className="phone-numbers">
+                        <p>03822-220317</p>
+                        <p>+917085587947</p>
+                      </div>
                     </div>
                   </div>
 
@@ -157,8 +159,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-item-content">
                       <h3>Email</h3>
-                      <p>pmshri-dghs-tripura@gov.in</p>
-                      <p>info@dghs-school.edu.in</p>
+                      <p>headmasterdmngirls@gmail.com</p>
                     </div>
                   </div>
 
@@ -171,8 +172,8 @@ const Contact = () => {
                     </div>
                     <div className="contact-item-content">
                       <h3>School Hours</h3>
-                      <p>Monday - Saturday: 7:30 AM - 1:30 PM</p>
-                      <p>Sunday: Closed</p>
+                      <p>Morning Shift: 6:30 am to 10:30 am</p>
+                      <p>Noon Shift: 10:45 am to 4:15 pm</p>
                     </div>
                   </div>
                 </div>

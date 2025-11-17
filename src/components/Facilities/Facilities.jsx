@@ -76,18 +76,16 @@ const Facilities = () => {
           </p>
         </div>
 
-        <div className="facilities-grid">
-          {facilities.map((facility, index) => (
-            <div key={index} className="facility-card">
-              <div className="facility-icon">
-                {facility.icon}
-              </div>
-              <div className="facility-content">
-                <h3>{facility.title}</h3>
-                <p>{facility.description}</p>
-              </div>
-            </div>
-          ))}
+        <div className="facilities-buttons">
+          <a href="/academic" className="facility-btn">
+            Academic
+          </a>
+          <a href="/co-curricular" className="facility-btn">
+            Co-Curricular
+          </a>
+          <a href="/campus-support" className="facility-btn">
+            Campus & Student Support
+          </a>
         </div>
       </div>
     </section>

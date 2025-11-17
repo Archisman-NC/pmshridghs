@@ -14,6 +14,7 @@ const Footer = () => {
   ];
 
   const importantLinks = [
+    { name: 'TBSE', href: 'https://tbse.tripura.gov.in/' },
     { name: 'NCERT', href: 'https://ncert.nic.in/' },
     { name: 'CBSE', href: 'https://cbse.nic.in/' },
     { name: 'Digital India', href: 'https://digitalindia.gov.in/' },

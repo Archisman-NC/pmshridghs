@@ -6,111 +6,58 @@ const Staff = () => {
   const staffMembers = [
     {
       id: 1,
-      name: 'Dr. Smita Sharma',
-      designation: 'Principal',
-      qualification: 'M.Sc., Ph.D. (Education)',
-      email: 'principal@dghs-school.edu.in',
-      phone: '+91-3822-234567',
-      image: '/assets/images/staff/principal.jpg'
+      name: 'SMT SUPARNA GHOSH (AHM, HO & DDO)',
+      phone: '7085587947'
     },
     {
       id: 2,
-      name: 'Mrs. Anjali Dutta',
-      designation: 'Vice Principal',
-      qualification: 'M.A. (English), B.Ed.',
-      email: 'viceprincipal@dghs-school.edu.in',
-      phone: '+91-3822-234568',
-      image: '/assets/images/staff/vice-principal.jpg'
+      name: 'SMT ANITA DHAR (TR) (PGT)',
+      phone: '6033031504'
     },
     {
       id: 3,
-      name: 'Mrs. Rekha Chakraborty',
-      designation: 'Senior Teacher (Science)',
-      qualification: 'M.Sc. (Physics), B.Ed.',
-      email: 'rekha.c@dghs-school.edu.in',
-      phone: '+91-3822-234569',
-      image: '/assets/images/staff/science-teacher.jpg'
+      name: 'SMT BORNAU NATH (PGT)',
+      phone: '9612473375'
     },
     {
       id: 4,
-      name: 'Mrs. Sushmita Pal',
-      designation: 'Senior Teacher (Mathematics)',
-      qualification: 'M.Sc. (Mathematics), B.Ed.',
-      email: 'sushmita.p@dghs-school.edu.in',
-      phone: '+91-3822-234570',
-      image: '/assets/images/staff/math-teacher.jpg'
+      name: 'SMT CHAMPA NATH (PGT)',
+      phone: '9774446132'
     },
     {
       id: 5,
-      name: 'Mrs. Kavita Roy',
-      designation: 'Senior Teacher (English)',
-      qualification: 'M.A. (English), B.Ed.',
-      email: 'kavita.r@dghs-school.edu.in',
-      phone: '+91-3822-234571',
-      image: '/assets/images/staff/english-teacher.jpg'
+      name: 'SMT JAYANTI BHATTACHARJEE (PGT)',
+      phone: '9436479277'
     },
     {
       id: 6,
-      name: 'Mrs. Priti Sarkar',
-      designation: 'Senior Teacher (Social Science)',
-      qualification: 'M.A. (History), B.Ed.',
-      email: 'priti.s@dghs-school.edu.in',
-      phone: '+91-3822-234572',
-      image: '/assets/images/staff/social-teacher.jpg'
+      name: 'SMT MAMATA NATH (PGT)',
+      phone: '9862352796'
     },
     {
       id: 7,
-      name: 'Mrs. Rina Das',
-      designation: 'Senior Teacher (Bengali)',
-      qualification: 'M.A. (Bengali), B.Ed.',
-      email: 'rina.d@dghs-school.edu.in',
-      phone: '+91-3822-234573',
-      image: '/assets/images/staff/bengali-teacher.jpg'
+      name: 'SMT MANIMALA CHAKRABORTY (PGT)',
+      phone: '9436476044'
     },
     {
       id: 8,
-      name: 'Mrs. Meena Ghosh',
-      designation: 'Physical Education Teacher',
-      qualification: 'B.P.Ed., M.P.Ed.',
-      email: 'meena.g@dghs-school.edu.in',
-      phone: '+91-3822-234574',
-      image: '/assets/images/staff/pe-teacher.jpg'
+      name: 'SMT NAMRATA BHATTACHARJEE (GT)',
+      phone: '7005144747'
     },
     {
       id: 9,
-      name: 'Mrs. Shanti Devi',
-      designation: 'Computer Science Teacher',
-      qualification: 'MCA, B.Ed.',
-      email: 'shanti.d@dghs-school.edu.in',
-      phone: '+91-3822-234575',
-      image: '/assets/images/staff/cs-teacher.jpg'
+      name: 'SMT DR. NANDITA CHAKRABORTY (PGT)',
+      phone: '8119036493'
     },
     {
       id: 10,
-      name: 'Mrs. Lata Bhowmik',
-      designation: 'Librarian',
-      qualification: 'M.L.I.Sc.',
-      email: 'lata.b@dghs-school.edu.in',
-      phone: '+91-3822-234576',
-      image: '/assets/images/staff/librarian.jpg'
+      name: 'SMT NIRUPAMA SEN (PGT)',
+      phone: '9774209778'
     },
     {
       id: 11,
-      name: 'Mrs. Gita Deb',
-      designation: 'Laboratory Assistant',
-      qualification: 'B.Sc. (Chemistry)',
-      email: 'gita.d@dghs-school.edu.in',
-      phone: '+91-3822-234577',
-      image: '/assets/images/staff/lab-assistant.jpg'
-    },
-    {
-      id: 12,
-      name: 'Mrs. Anita Singh',
-      designation: 'Office Assistant',
-      qualification: 'B.Com.',
-      email: 'anita.s@dghs-school.edu.in',
-      phone: '+91-3822-234578',
-      image: '/assets/images/staff/office-assistant.jpg'
+      name: 'SMT PALLABI GOSWAMI (GT)',
+      phone: '7005453667'
     }
   ];
 
@@ -145,11 +92,7 @@ const Staff = () => {
                 <StaffCard
                   key={staff.id}
                   name={staff.name}
-                  designation={staff.designation}
-                  qualification={staff.qualification}
-                  email={staff.email}
                   phone={staff.phone}
-                  image={staff.image}
                 />
               ))}
             </div>
