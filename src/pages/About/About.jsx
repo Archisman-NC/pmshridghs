@@ -19,6 +19,17 @@ const About = () => {
         {/* Main Content */}
         <section className="about-content">
           <div className="about-wrapper">
+            {/* PM SHRI Information */}
+            <div className="about-pmshri">
+              <h2>About PM SHRI</h2>
+              <p>
+                PM SHRI School is a centrally sponsored scheme by the Government of India. This initiative is intended to develop more than 14500 PM SHRI Schools managed by Central Government/State/UT Government/local bodies including KVS and NVS in which every student feels welcomed and cared for, where a safe and stimulating learning environment exists, where a wide range of learning experiences are offered, and where good physical infrastructure and appropriate resources conducive to learning are available to all students.
+              </p>
+              <p>
+                It will nurture students in a way that they become engaged, productive, and contributing citizens for building an equitable, inclusive, and plural society as envisaged by the National Education Policy 2020.
+              </p>
+            </div>
+
             {/* School Description */}
             <div className="about-description">
                 <h2>A. Vision Statement of PM SHRI Schools:</h2>

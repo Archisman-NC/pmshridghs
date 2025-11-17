@@ -88,6 +88,119 @@
   background: linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 100%);
 }
 
+/* AHM Message Section */
+.ahm-message {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.ahm-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.ahm-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 10px;
+}
+
+.ahm-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.ahm-content {
+  flex: 1.2;
+  padding: 20px 0;
+}
+
+.ahm-title {
+  color: #1a237e;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.ahm-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #DD3F00, #E68000);
+  border-radius: 2px;
+}
+
+.ahm-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.ahm-text p {
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+.ahm-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .ahm-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .ahm-image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .ahm-content {
+    text-align: center;
+  }
+  
+  .ahm-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .ahm-message {
+    padding: 60px 0;
+  }
+  
+  .ahm-title {
+    font-size: 1.8rem;
+  }
+  
+  .ahm-text {
+    font-size: 1rem;
+  }
+}
+
 .section-title {
   text-align: center;
   font-size: 2.8rem;
@@ -275,7 +388,38 @@
   }
 }
 
+@media (max-width: 992px) {
+  .ahm-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .ahm-image {
+    max-width: 100%;
+    min-width: auto;
+  }
+  
+  .ahm-text {
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .ahm-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 768px) {
+  .ahm-title {
+    font-size: 2rem;
+  }
+  
+  .ahm-message {
+    padding: 70px 0;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }

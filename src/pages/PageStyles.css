@@ -100,6 +100,57 @@
   margin-top: 2rem;
 }
 
+.important-links {
+  margin: 3rem 0;
+}
+
+.important-links h2 {
+  color: #060086;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.link-card {
+  display: block;
+  background: linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  border-left: 5px solid #9F6501;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  border-left-color: #906820;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-card h3 {
+  color: #060086;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.link-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 .contact-info h2, .contact-form h2 {
   color: #060086;
   margin-bottom: 1.5rem;

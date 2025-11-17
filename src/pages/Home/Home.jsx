@@ -51,7 +51,43 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Highlights Section */}
+      {/* Message from AHM Section */}
+      <section className="message-section">
+        <div className="container">
+          <div className="message-container">
+            <div className="message-image">
+              <img 
+                src="/assets/images/gallery/AHM.jpg" 
+                alt="AHM of PMShri Dharmanagar Govt. Girls' H.S. School"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <div className="image-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21,15 16,10 5,21"/>
+                </svg>
+              </div>
+            </div>
+            <div className="message-content">
+              <h2 className="section-title">Message from AHM</h2>
+              <div className="message-text">
+                <p>Dear parents,</p>
+                <p>Greetings from AHM's desk.</p>
+                <p>
+                  As a PM SHRI School, we are committed to providing quality education rooted in innovation, 
+                  inclusivity, and holistic development. Under the PM SHRI framework, our school is adopting 
+                  modern classroom practices, strengthening digital learning, and promoting environmental 
+                  awareness to create a safe and enriching learning environment for every girl.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="highlights-section">
         <div className="container">
           <div className="highlights-grid">

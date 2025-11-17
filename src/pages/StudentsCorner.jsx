@@ -11,6 +11,17 @@ const StudentsCorner = () => {
             Welcome to the Students Corner! This space is dedicated to our students' achievements, 
             activities, and resources that support their educational journey.
           </p>
+          
+          <div className="important-links">
+            <h2>Important Links</h2>
+            <div className="links-grid">
+              <a href="https://tbse.tripura.gov.in/results" target="_blank" rel="noopener noreferrer" className="link-card">
+                <h3>📊 TBSE Results</h3>
+                <p>Check Tripura Board of Secondary Education examination results</p>
+              </a>
+            </div>
+          </div>
+          
           <div className="resources-grid">
             <div className="resource-card">
               <h3>📚 Study Materials</h3>

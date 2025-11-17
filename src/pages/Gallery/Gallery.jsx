@@ -16,87 +16,108 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      title: 'Annual Day Celebration',
-      category: 'events',
-      thumbnail: '/assets/images/gallery/annual-day-thumb.jpg',
-      full: '/assets/images/gallery/annual-day.jpg'
+      title: 'Achievement 1',
+      category: 'achievements',
+      thumbnail: '/assets/images/gallery/image1.png',
+      full: '/assets/images/gallery/image1.png'
     },
     {
       id: 2,
-      title: 'Science Exhibition',
-      category: 'activities',
-      thumbnail: '/assets/images/gallery/science-expo-thumb.jpg',
-      full: '/assets/images/gallery/science-expo.jpg'
+      title: 'Achievement 2',
+      category: 'achievements',
+      thumbnail: '/assets/images/gallery/image2.png',
+      full: '/assets/images/gallery/image2.png'
     },
     {
       id: 3,
-      title: 'Smart Classroom',
-      category: 'infrastructure',
-      thumbnail: '/assets/images/gallery/classroom-thumb.jpg',
-      full: '/assets/images/gallery/classroom.jpg'
+      title: 'Activity 3',
+      category: 'activities',
+      thumbnail: '/assets/images/gallery/image3.png',
+      full: '/assets/images/gallery/image3.png'
     },
     {
       id: 4,
-      title: 'Sports Day',
+      title: 'Event 4',
       category: 'events',
-      thumbnail: '/assets/images/gallery/sports-day-thumb.jpg',
-      full: '/assets/images/gallery/sports-day.jpg'
+      thumbnail: '/assets/images/gallery/image4.png',
+      full: '/assets/images/gallery/image4.png'
     },
     {
       id: 5,
-      title: 'Computer Lab',
-      category: 'infrastructure',
-      thumbnail: '/assets/images/gallery/computer-lab-thumb.jpg',
-      full: '/assets/images/gallery/computer-lab.jpg'
+      title: 'Achievement 5',
+      category: 'achievements',
+      thumbnail: '/assets/images/gallery/image5.png',
+      full: '/assets/images/gallery/image5.png'
     },
     {
       id: 6,
-      title: 'Cultural Program',
-      category: 'activities',
-      thumbnail: '/assets/images/gallery/cultural-thumb.jpg',
-      full: '/assets/images/gallery/cultural.jpg'
+      title: 'Event 6',
+      category: 'events',
+      thumbnail: '/assets/images/gallery/image6.png',
+      full: '/assets/images/gallery/image6.png'
     },
     {
       id: 7,
-      title: 'Award Ceremony',
-      category: 'achievements',
-      thumbnail: '/assets/images/gallery/awards-thumb.jpg',
-      full: '/assets/images/gallery/awards.jpg'
+      title: 'Activity 7',
+      category: 'activities',
+      thumbnail: '/assets/images/gallery/image7.png',
+      full: '/assets/images/gallery/image7.png'
     },
     {
       id: 8,
-      title: 'Library',
-      category: 'infrastructure',
-      thumbnail: '/assets/images/gallery/library-thumb.jpg',
-      full: '/assets/images/gallery/library.jpg'
+      title: 'Event 8',
+      category: 'events',
+      thumbnail: '/assets/images/gallery/image8.png',
+      full: '/assets/images/gallery/image8.png'
     },
     {
       id: 9,
-      title: 'Science Lab',
-      category: 'infrastructure',
-      thumbnail: '/assets/images/gallery/science-lab-thumb.jpg',
-      full: '/assets/images/gallery/science-lab.jpg'
+      title: 'Activity 9',
+      category: 'activities',
+      thumbnail: '/assets/images/gallery/image9.png',
+      full: '/assets/images/gallery/image9.png'
     },
     {
       id: 10,
-      title: 'Independence Day',
+      title: 'Event 10',
       category: 'events',
-      thumbnail: '/assets/images/gallery/independence-thumb.jpg',
-      full: '/assets/images/gallery/independence.jpg'
+      thumbnail: '/assets/images/gallery/image10.png',
+      full: '/assets/images/gallery/image10.png'
     },
     {
       id: 11,
-      title: 'Art Competition',
-      category: 'activities',
-      thumbnail: '/assets/images/gallery/art-comp-thumb.jpg',
-      full: '/assets/images/gallery/art-comp.jpg'
+      title: 'Event 11',
+      category: 'events',
+      thumbnail: '/assets/images/gallery/image11.png',
+      full: '/assets/images/gallery/image11.png'
     },
     {
       id: 12,
-      title: 'Prize Distribution',
+      title: 'Event 12',
+      category: 'events',
+      thumbnail: '/assets/images/gallery/image12.png',
+      full: '/assets/images/gallery/image12.png'
+    },
+    {
+      id: 13,
+      title: 'Activity 13',
+      category: 'activities',
+      thumbnail: '/assets/images/gallery/image13.png',
+      full: '/assets/images/gallery/image13.png'
+    },
+    {
+      id: 14,
+      title: 'Achievement 14',
       category: 'achievements',
-      thumbnail: '/assets/images/gallery/prize-thumb.jpg',
-      full: '/assets/images/gallery/prize.jpg'
+      thumbnail: '/assets/images/gallery/image14.png',
+      full: '/assets/images/gallery/image14.png'
+    },
+    {
+      id: 15,
+      title: 'Infrastructure 15',
+      category: 'infrastructure',
+      thumbnail: '/assets/images/gallery/image15.jpg',
+      full: '/assets/images/gallery/image15.jpg'
     }
   ];
 

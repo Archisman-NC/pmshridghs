@@ -55,6 +55,54 @@
   background-color: var(--white);
 }
 
+/* PM SHRI Section */
+.about-pmshri {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+  border-radius: 12px;
+  padding: var(--space-8);
+  margin: var(--space-12) 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid var(--primary-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-pmshri::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e6e9ff'%3E%3Cpath d='M12 2L4 12l8 10 8-10z'/%3E%3C/svg%3E") no-repeat;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.about-pmshri h2 {
+  color: var(--primary-blue);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: var(--space-6);
+  position: relative;
+  text-align: center;
+}
+
+.about-pmshri p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: var(--space-4);
+  position: relative;
+  text-align: justify;
+}
+
+.about-pmshri p:last-child {
+  margin-bottom: 0;
+}
+
 .about-wrapper {
   width: 100%;
   max-width: 1200px;

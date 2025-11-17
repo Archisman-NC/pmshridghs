@@ -145,32 +145,6 @@
   gap: var(--space-1);
 }
 
-/* Map */
-.contact-map h3 {
-  font-family: var(--font-heading);
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: var(--space-3);
-}
-
-.map-placeholder {
-  height: 200px;
-  background-color: var(--light-gray);
-  border-radius: var(--radius-md);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  color: var(--text-light);
-}
-
-.map-placeholder svg {
-  width: 48px;
-  height: 48px;
-}
-
 /* Contact Form */
 .contact-form-section {
   background-color: var(--white);

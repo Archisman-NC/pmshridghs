@@ -35,6 +35,96 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Message from AHM Section */}
+      <section className="ahm-message" style={{
+        background: '#f8f9fa',
+        padding: '60px 0',
+        margin: '40px 0',
+        borderTop: '1px solid #e9ecef',
+        borderBottom: '1px solid #e9ecef'
+      }}>
+        <div className="container" style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 20px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '60px'
+        }}>
+          <div style={{
+            flex: '1',
+            minWidth: '300px',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)'
+          }}>
+            <img 
+              src="/assets/images/gallery/AHM.jpg"
+              alt="AHM of PMShri Dharmanagar Govt. Girls' H.S. School"
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block'
+              }}
+              onError={(e) => {
+                console.error('Error loading image:', e.target.src);
+                e.target.style.display = 'none';
+                const container = e.target.parentElement;
+                container.innerHTML = `
+                  <div style="
+                    padding: 2rem; 
+                    text-align: center; 
+                    color: #666;
+                    background: #fff;
+                    min-height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  ">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📷</div>
+                    <p style="font-weight: 500; margin-bottom: 0.5rem;">AHM's Photo</p>
+                    <p style="font-size: 0.9rem; color: #999; margin: 0;">Image not available</p>
+                  </div>
+                `;
+              }}
+            />
+          </div>
+          <div style={{ flex: '1.2' }}>
+            <h2 style={{
+              color: '#1a237e',
+              fontSize: '2.2rem',
+              marginBottom: '1.5rem',
+              position: 'relative',
+              paddingBottom: '15px'
+            }}>
+              Message from AHM
+              <span style={{
+                content: "''",
+                position: 'absolute',
+                left: 0,
+                bottom: 0,
+                width: '60px',
+                height: '4px',
+                background: 'linear-gradient(90deg, #DD3F00, #E68000)',
+                borderRadius: '2px'
+              }}></span>
+            </h2>
+            <div style={{
+              fontSize: '1.1rem',
+              lineHeight: '1.8',
+              color: '#333'
+            }}>
+              <p>Dear parents,</p>
+              <p>Greetings from AHM's desk.</p>
+              <p>
+                As a PM SHRI School, we are committed to providing quality education rooted in innovation, inclusivity, and holistic development. Under the PM SHRI framework, our school is adopting modern classroom practices, strengthening digital learning, and promoting environmental awareness to create a safe and enriching learning environment for every girl.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="about-section section">
         <div className="container">
           <h2 className="section-title">Welcome to Our Institution</h2>
