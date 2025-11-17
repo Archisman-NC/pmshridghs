@@ -50,6 +50,7 @@
 
 /* About Content Section */
 .about-content {
+  display: block;
   padding: var(--space-12) 0;
   background-color: var(--white);
 }
