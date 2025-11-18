@@ -16,7 +16,7 @@ const Staff = () => {
     },
     {
       id: 3,
-      name: 'SMT BORNAU NATH (PGT)',
+      name: 'SMT BORNALI NATH (PGT)',
       phone: '9612473375'
     },
     {

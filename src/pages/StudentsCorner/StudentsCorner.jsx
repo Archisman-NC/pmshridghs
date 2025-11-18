@@ -1,8 +1,58 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './StudentsCorner.css';
 
 const StudentsCorner = () => {
   const [activeTab, setActiveTab] = useState('notices');
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const sliderImages = [
+    {
+      id: 'image2',
+      title: 'Academic Achievers',
+      subtitle: 'Celebrating scholastic excellence',
+      src: '/assets/images/gallery/image2.png'
+    },
+    {
+      id: 'image3',
+      title: 'Creative Learning',
+      subtitle: 'Students excelling in co-curricular activities',
+      src: '/assets/images/gallery/image3.png'
+    },
+    {
+      id: 'image10',
+      title: 'Events & Celebrations',
+      subtitle: 'Capturing memorable school events',
+      src: '/assets/images/gallery/image10.png'
+    },
+    {
+      id: 'image13',
+      title: 'Achievements',
+      subtitle: 'Proud moments from recent competitions',
+      src: '/assets/images/gallery/image13.png'
+    },
+    {
+      id: 'image6',
+      title: 'Cultural Showcase',
+      subtitle: 'Celebrating traditions and performances',
+      src: '/assets/images/gallery/image6.png'
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + sliderImages.length) % sliderImages.length);
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderImages.length);
+  };
 
   const notices = [
     {
@@ -129,6 +179,55 @@ const StudentsCorner = () => {
         {/* Main Content */}
         <section className="students-content">
           <div className="container">
+            {/* Highlight Carousel */}
+            <div className="students-slider">
+              <button 
+                className="slider-control prev" 
+                onClick={handlePrevSlide}
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              
+              <div className="slider-window">
+                {sliderImages.map((image, index) => (
+                  <div 
+                    key={image.id} 
+                    className={`slider-slide ${index === currentSlide ? 'active' : ''}`}
+                  >
+                    <img 
+                      src={image.src} 
+                      alt={image.title} 
+                      loading="lazy"
+                    />
+                    <div className="slider-caption">
+                      <h3>{image.title}</h3>
+                      <p>{image.subtitle}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <button 
+                className="slider-control next" 
+                onClick={handleNextSlide}
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+
+              <div className="slider-indicators">
+                {sliderImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`indicator ${index === currentSlide ? 'active' : ''}`}
+                    onClick={() => setCurrentSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+
             {/* Tab Navigation */}
             <div className="tab-navigation">
               <button

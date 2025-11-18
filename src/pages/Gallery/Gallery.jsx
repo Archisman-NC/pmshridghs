@@ -15,11 +15,25 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      id: 1,
-      title: 'Achievement 1',
-      category: 'achievements',
-      thumbnail: '/assets/images/gallery/image1.png',
-      full: '/assets/images/gallery/image1.png'
+      id: 15,
+      title: 'Infrastructure 15',
+      category: 'infrastructure',
+      thumbnail: '/assets/images/gallery/image15.jpg',
+      full: '/assets/images/gallery/image15.jpg'
+    },
+    {
+      id: 16,
+      title: 'Infrastructure 16',
+      category: 'infrastructure',
+      thumbnail: '/assets/images/gallery/image16.jpg',
+      full: '/assets/images/gallery/image16.jpg'
+    },
+    {
+      id: 9,
+      title: 'Activity 9',
+      category: 'activities',
+      thumbnail: '/assets/images/gallery/image9.png',
+      full: '/assets/images/gallery/image9.png'
     },
     {
       id: 2,
@@ -71,13 +85,6 @@ const Gallery = () => {
       full: '/assets/images/gallery/image8.png'
     },
     {
-      id: 9,
-      title: 'Activity 9',
-      category: 'activities',
-      thumbnail: '/assets/images/gallery/image9.png',
-      full: '/assets/images/gallery/image9.png'
-    },
-    {
       id: 10,
       title: 'Event 10',
       category: 'events',
@@ -111,13 +118,6 @@ const Gallery = () => {
       category: 'achievements',
       thumbnail: '/assets/images/gallery/image14.png',
       full: '/assets/images/gallery/image14.png'
-    },
-    {
-      id: 15,
-      title: 'Infrastructure 15',
-      category: 'infrastructure',
-      thumbnail: '/assets/images/gallery/image15.jpg',
-      full: '/assets/images/gallery/image15.jpg'
     }
   ];
 

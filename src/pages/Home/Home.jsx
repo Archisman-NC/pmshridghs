@@ -73,10 +73,10 @@ const Home = () => {
               </div>
             </div>
             <div className="message-content">
-              <h2 className="section-title">Message from AHM</h2>
+              <h2 className="section-title">Message from Assistant Head Mistress's Desk</h2>
               <div className="message-text">
                 <p>Dear parents,</p>
-                <p>Greetings from AHM's desk.</p>
+                <p>Greetings from the desk,</p>
                 <p>
                   As a PM SHRI School, we are committed to providing quality education rooted in innovation, 
                   inclusivity, and holistic development. Under the PM SHRI framework, our school is adopting 

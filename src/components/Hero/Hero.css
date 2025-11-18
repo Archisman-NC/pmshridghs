@@ -38,6 +38,14 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-2);
+}
+
+.hero-udise {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: var(--space-4);
 }
 
@@ -60,83 +68,28 @@
   min-width: 140px;
 }
 
-/* Hero Highlights */
-.hero-highlights {
+/* Hero Logo */
+.hero-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.highlight-cards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  width: 100%;
-  max-width: 320px;
-}
-
-.highlight-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-md);
-  padding: var(--space-4);
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  transition: var(--transition);
   animation: fadeInUp 0.8s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: both;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0 auto;
 }
 
-.highlight-card:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.highlight-card:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-.highlight-card:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-.highlight-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.highlight-icon svg {
-  width: 24px;
-  height: 24px;
-  color: var(--white);
-}
-
-.highlight-content h3 {
-  font-family: var(--font-heading);
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.highlight-content p {
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--white);
-  margin: 0;
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Decorative Elements */
@@ -212,6 +165,10 @@
     font-size: 1.25rem;
   }
   
+  .hero-udise {
+    font-size: 1.125rem;
+  }
+  
   .hero-description {
     font-size: 1rem;
     margin: 0 auto var(--space-6);
@@ -221,22 +178,10 @@
     justify-content: center;
   }
   
-  .hero-highlights {
+  .hero-logo {
     margin-top: var(--space-4);
-  }
-  
-  .highlight-cards {
-    max-width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-3);
-  }
-  
-  .highlight-card {
-    flex: 1;
-    min-width: 200px;
-    max-width: 240px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -257,6 +202,10 @@
     font-size: 1.125rem;
   }
   
+  .hero-udise {
+    font-size: 1rem;
+  }
+  
   .hero-description {
     font-size: 0.9375rem;
   }
@@ -271,31 +220,8 @@
     max-width: 280px;
   }
   
-  .highlight-cards {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-  
-  .highlight-card {
-    min-width: auto;
-    max-width: 100%;
-  }
-  
-  .highlight-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .highlight-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .highlight-content h3 {
-    font-size: 0.75rem;
-  }
-  
-  .highlight-content p {
-    font-size: 1rem;
+  .hero-logo {
+    width: 250px;
+    height: 250px;
   }
 }
