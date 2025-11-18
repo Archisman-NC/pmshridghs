@@ -118,7 +118,7 @@ const Home = () => {
               <p>Dear parents,</p>
               <p>Greetings from AHM's desk.</p>
               <p>
-                As a PM SHRI School, we are committed to providing quality education rooted in innovation, inclusivity, and holistic development. Under the PM SHRI framework, our school is adopting modern classroom practices, strengthening digital learning, and promoting environmental awareness to create a safe and enriching learning environment for every girl.
+                As a PMSHRI School, we are committed to providing quality education rooted in innovation, inclusivity, and holistic development. Under the PM SHRI framework, our school is adopting modern classroom practices, strengthening digital learning, and promoting environmental awareness to create a safe and enriching learning environment for every girl.
               </p>
             </div>
           </div>

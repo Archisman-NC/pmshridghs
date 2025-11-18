@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              PM SHRI DHARMANAGAR GOVT. GIRLS' H.S. SCHOOL
+              PMSHRI DHARMANAGAR GOVT. GIRLS' H.S. SCHOOL
             </h1>
             <h2 className="hero-subtitle">
               (Estd: 1938)

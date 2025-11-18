@@ -36,7 +36,7 @@ const Navbar = () => {
                 className="brand-logo"
               />
               <div className="brand-text">
-                <span className="brand-name">PMShri DGGHSS</span>
+                <span className="brand-name">PMSHRI DHARMANAGAR GOVT. GIRLS' H.S. SCHOOL</span>
                 <span className="brand-tagline">Dharmanagar</span>
               </div>
             </div>
